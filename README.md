@@ -1,1 +1,1 @@
-In this project I will be sharing finished exercises about C programming language. As I share those exercises I will try to simplify every line of code, so that it is gonna be understandable for others. I hope it is gonna be fun, good luck!
+In this project I will be sharing finished exercises about the C programming language. As I share those exercises I will try to simplify every line of code, so that it is gonna be understandable for others. I hope it is gonna be fun, good luck!
