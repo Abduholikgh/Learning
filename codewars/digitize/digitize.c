@@ -9,20 +9,6 @@ void digitize (uint64_t n, uint8_t digits[], size_t *length_out)
     *length_out = 1; // report the number of digits
 }
 */
-void digitize (uint64_t n, uint8_t digits[], size_t *length_out)
-{
-	uint64_t n = 12345;
-	uint8_t digits[ft_counter(n)];
-	int c = 0;
-	
-	while(n > 0)
-	{
-		digits[c] = n % 10;
-		printf("This is the output => %hhu\n", digits[c]);
-		n = n / 10;
-		c++;
-	}
-}
 
 int ft_counter(uint64_t n)
 {
@@ -37,8 +23,33 @@ int ft_counter(uint64_t n)
 	return (i);
 }
 
+int digitize (uint64_t n, uint8_t digits[ft_counter(n)], size_t *length_out)
+{
+	int c = 0;
+	int a = *length_out;
+	int arr2[a];
+
+	while(n > 0)
+	{
+		arr2[c] = n % 10;
+		printf("This is the output => %hhu\n", arr2[c]);
+		n = n / 10;
+		c++;
+	}
+	return(*arr2);
+}
+
 int main()
 {
-	digitize(12345,//unint8 qana qilib uzatish muammo , size_t ishlatmadim ishlatishim kerakmidi )
+	int x = 19;
+	uint8_t arr[] = {0,1,2,3,4,5};
+	int i = 0;
+
+	while(i < 7)
+	{
+		printf("Before => %d\n", arr[i]);
+		i++;
+	}
+	digitize(12345, arr, (size_t *)&i);
 	return (0);
 }
