@@ -2,6 +2,10 @@
 #include <stddef.h>
 #include <inttypes.h>
 #include <string.h>
+
+int ft_counter(uint64_t n);
+int digitize (uint64_t n, uint8_t digits[ft_counter(n)], size_t *length_out);
+
 /*
 void digitize (uint64_t n, uint8_t digits[], size_t *length_out)
 {
