@@ -4,7 +4,7 @@
 
 int main()
 {
-	uint8_t x[] = {122, 12, 90};
+	uint8_t x[3] = {122, 12, 90};
 	size_t z = sizeof(x);
 	int i = 0;
 
