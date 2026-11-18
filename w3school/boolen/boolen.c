@@ -3,10 +3,13 @@
 
 int main()
 {
-	bool hallo = true;
-	bool ola = false;
+	int myAge;
 
-	printf("hallo => %d\n", hallo);
-	printf("ola => %d\n", ola);
+	printf("Please put your age => ");
+	scanf("%d", &myAge);
+	if (myAge >= 18 && myAge <= 120)
+		printf("Welcome, you are eligible to vote!");
+	else
+		printf("Unfortunetly, you are not eligible to vote.");
 	return (0);
 }
